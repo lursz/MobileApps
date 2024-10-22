@@ -18,7 +18,7 @@ struct MainTabView: View {
                     Text("Podsumowanie")
                 }
             
-            Text("Wszystkie")
+            ToDoListView(toDos: $ToDos)
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Wszystkie")
