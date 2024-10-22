@@ -1,7 +1,8 @@
 import Foundation;
 
 
-struct ToDo {
+struct ToDo: Identifiable {
+    var id = UUID()
     var title: String
     var desc: String
     var priority: Priority

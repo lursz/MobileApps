@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct todoAppApp: App {
+    @State var toDos: [ToDo] = []
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            MainTabView(ToDos: $toDos)
         }
     }
 }
