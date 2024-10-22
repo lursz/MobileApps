@@ -10,7 +10,7 @@ struct SummaryView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.5), Color.purple.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color("BackgroundTop"), Color("BackgoundBottom")]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea() // ignore notch
             
             VStack {
@@ -20,7 +20,7 @@ struct SummaryView: View {
                     .padding()
 
                 VStack(spacing: 20) {
-                    Text("Tasks")
+                    Text("Taski")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding()
