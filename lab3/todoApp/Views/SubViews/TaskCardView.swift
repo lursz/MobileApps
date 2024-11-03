@@ -9,8 +9,7 @@ struct TaskCardView: View {
                     HStack{
                         Button(action: {
                         }) {
-                            Image(systemName: "checkmark.square")
-                                .foregroundColor(.blue)
+                            CheckBoxView(isCompleted: todo)
                         }
                         Text(todo.title)
                             .font(.headline)
@@ -93,14 +92,3 @@ struct TaskCardView: View {
     }
 }
 
-
-
-#Preview {
-    TaskCardView(todo: ToDo(
-        title: "Stellar task",
-        desc: "Keep grinding.",
-        priority: .high,
-        date: Calendar.current.date(byAdding: .day, value: 2, to: Date())!,
-        deadline: Calendar.current.date(byAdding: .day, value: 5, to: Date())!
-    ))
-}

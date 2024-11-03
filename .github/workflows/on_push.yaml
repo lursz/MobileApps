@@ -1,0 +1,17 @@
+name: Build and Test Swift App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v3
+      -1 name: Build the app
+        run: xcodebuild build -workspace MyProject.xcworkspace -scheme MyScheme -configuration Release
+      # - name: Run unit tests
+      #   run: xcodebuild test -workspace MyProject.xcworkspace -scheme MyScheme -configuration Release

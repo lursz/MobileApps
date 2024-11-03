@@ -1,6 +1,6 @@
-
 import SwiftUI
 import SwiftData
+
 struct ToDoListView: View {
     @Environment(\.modelContext) private var context
     @Query var toDos: [ToDo]
@@ -16,18 +16,26 @@ struct ToDoListView: View {
         case .incoming:
             context.insert(ToDo(title: "Incoming task", desc: "", priority: .low, date: Calendar.current.date(byAdding: .day, value: 2, to: Date()), deadline: Calendar.current.date(byAdding: .day, value: 2, to: Date())))
         }
-
     }
     
+    var filteredToDos: [ToDo] {
+        switch filterType {
+        case .neither:
+            return toDos
+        case .overdue:
+            return toDos.filter { ($0.deadline ?? Date()) < Date() }
+        case .incoming:
+            return toDos.filter { ($0.deadline ?? Date()) >= Date() }
+        }
+    }
     
     var body: some View {
         NavigationSplitView{
             List{
-                ForEach(toDos) { ToDo_ in
-//                    toDo_ in TaskCardView(todo: toDo_)
+                ForEach(filteredToDos) { ToDo_ in
                     NavigationLink{
                         Text(ToDo_.title)
-                    } label:{
+                    } label: {
                         TaskCardView(todo: ToDo_)
                     }
                 }
@@ -43,8 +51,6 @@ struct ToDoListView: View {
         } detail: {}
     }
 }
-
-
 
 #Preview {
     ToDoListView(filterType: .neither)
