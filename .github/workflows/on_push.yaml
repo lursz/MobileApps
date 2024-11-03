@@ -1,4 +1,4 @@
-name: Build and Test Swift App
+name: iOS CI
 
 on:
   push:
@@ -7,11 +7,17 @@ on:
     branches: [main]
 
 jobs:
-  build-and-test:
-    runs-on: macOS-latest
+  build:
+    runs-on: macos-latest
+
     steps:
-      - uses: actions/checkout@v3
-      -1 name: Build the app
-        run: xcodebuild build -workspace MyProject.xcworkspace -scheme MyScheme -configuration Release
-      # - name: Run unit tests
-      #   run: xcodebuild test -workspace MyProject.xcworkspace -scheme MyScheme -configuration Release
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Build
+        run: xcodebuild clean build -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
+
+      - name: Run tests
+        run: xcodebuild test -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
