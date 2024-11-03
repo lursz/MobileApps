@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: macos-latest
 
+    env:
+      PROJECT_PATH: lab3/todoApp.xcodeproj
+
     steps:
       - uses: actions/checkout@v4
 
@@ -17,7 +20,7 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode.app
 
       - name: Build
-        run: xcodebuild clean build -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
+        run: xcodebuild clean build -project ${{ env.PROJECT_PATH }} -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
 
       - name: Run tests
-        run: xcodebuild test -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
+        run: xcodebuild test -project ${{ env.PROJECT_PATH }} -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 15'
