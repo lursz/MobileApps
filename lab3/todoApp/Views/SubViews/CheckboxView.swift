@@ -4,10 +4,10 @@ struct CheckBoxView: View {
     var todo: ToDo
     
     var body: some View {
-        Image(systemName: todo.checkbox ? "checkmark.square.fill" : "square")
-            .foregroundColor(todo.checkbox ? Color("CheckboxFill") : .gray)
+        Image(systemName: todo.isCompleted ? "checkmark.square.fill" : "square")
+            .foregroundColor(todo.isCompleted ? Color("CheckboxFill") : .gray)
             .onTapGesture {
-                todo.checkbox.toggle()
+                todo.isCompleted.toggle()
             }
     }
 }

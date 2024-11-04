@@ -9,7 +9,7 @@ struct TaskCardView: View {
                     HStack{
                         Button(action: {
                         }) {
-                            CheckBoxView(isCompleted: todo)
+                            CheckBoxView(todo: todo)
                         }
                         Text(todo.title)
                             .font(.headline)

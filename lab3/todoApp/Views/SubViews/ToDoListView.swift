@@ -6,18 +6,6 @@ struct ToDoListView: View {
     @Query var toDos: [ToDo]
     
     let filterType: FiterType
-    
-    func addTask(){
-        switch filterType {
-        case .neither:
-            context.insert(ToDo(title: "", desc: "", priority: .normal))
-        case .overdue:
-            context.insert(ToDo(title: "Overdue task", desc: "", priority: .low, date: Calendar.current.date(byAdding: .day, value: -2, to: Date()), deadline: Calendar.current.date(byAdding: .day, value: -2, to: Date())))
-        case .incoming:
-            context.insert(ToDo(title: "Incoming task", desc: "", priority: .low, date: Calendar.current.date(byAdding: .day, value: 2, to: Date()), deadline: Calendar.current.date(byAdding: .day, value: 2, to: Date())))
-        }
-    }
-    
     var filteredToDos: [ToDo] {
         switch filterType {
         case .neither:
@@ -28,6 +16,20 @@ struct ToDoListView: View {
             return toDos.filter { ($0.deadline ?? Date()) >= Date() }
         }
     }
+    
+    func addTask(){
+        switch filterType {
+        case .neither:
+            context.insert(ToDo(title: "Just a task", desc: "Just do it!", priority: .normal))
+            try! context.save()
+        case .overdue:
+            context.insert(ToDo(title: "Overdue task", desc: "Make your dreams come true", priority: .low, date: Calendar.current.date(byAdding: .day, value: -2, to: Date()), deadline: Calendar.current.date(byAdding: .day, value: -2, to: Date())))
+        case .incoming:
+            context.insert(ToDo(title: "Incoming task", desc: "make your dreams come true", priority: .low, date: Calendar.current.date(byAdding: .day, value: 2, to: Date()), deadline: Calendar.current.date(byAdding: .day, value: 2, to: Date())))
+            
+        }
+    }
+    
     
     var body: some View {
         NavigationSplitView{

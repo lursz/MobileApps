@@ -9,7 +9,7 @@ class ToDo: Identifiable {
     var priority: Priority
     var date: Date?
     var deadline: Date?
-    var checkbox: Bool
+    var isCompleted: Bool
 
     init(title: String, desc: String, priority: Priority, date: Date? = nil, deadline: Date? = nil) {
         self.title = title
@@ -17,7 +17,7 @@ class ToDo: Identifiable {
         self.priority = priority
         self.date = date
         self.deadline = deadline
-        self.checkbox = false
+        self.isCompleted = false
     }
 }
 
