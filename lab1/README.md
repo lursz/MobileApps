@@ -48,7 +48,7 @@ Pamiętaj aby:
 
 
  ## Zadania
- ### Model danych
+ ### 1. Model danych
  Utwórz strukturę o nazwie ToDo, modelującej pojedyncze zadanie. Model powinien
  zawierać następujące pola:
  - tytuł,
@@ -58,7 +58,7 @@ Pamiętaj aby:
  - planowana data wykonania– jako odpowiedni typ danych (może być nil),
  - termin (deadline)– jako odpowiedni typ danych (może być nil).
 
-### Widok pojedynczej karty zadania
+### 2. Widok pojedynczej karty zadania
  Utwórz widok pojedynczej karty zadania, która będzie używana do wyświetlania zadań
  na liście. Karta powinna zawierać:
  - miejsce na checkbox służący do oznaczania wykonania zadania (samą kontrokę
@@ -76,7 +76,7 @@ Pamiętaj aby:
  Skonfiguruj strukturę tak, aby miała zmienną (typu ToDo) reprezentującą treść zadania.
  Widok powinien wyświetlać dane z tej struktury. Ustaw odpowiednio sekcję podglądu
  (#Preview) tak, aby wyświetlane było przykładowe zadanie.
- ### Widok podsumowania
+ ### 3. Widok podsumowania
  Utwórz widok podsumowania, które będzie pokazywało liczbę zadań w poszczególnych
  kategoriach. W tym widoku umieść wyłącznie treści statyczne.
  Na górze widoku powinien pojawić się estetyczny napis tytułowy „Podsumowanie”.
@@ -93,7 +93,7 @@ Pamiętaj aby:
  - graniczne kolory gradientu,
  - kolor używany do wyświetlania liczby zadań zaległych.
 
-### Widok zakładek
+### 4. Widok zakładek
  Widok zakładek będzie głównym widokiem aplikacji. Wykorzystaj widok TabView i
  utwórz na dole 4 zakładki:
  - Podsumowanie,

@@ -13,7 +13,7 @@ Utwórz w swojej grupie projekt o ścieżce lab3, podobnie jak na pierwszym labo
 
 
  ## Zadania
- ### Persystencja
+ ### 1. Persystencja
  Zmodyfikuj swój projekt tak, aby dane przechowywane były w sposób trwały, przy
  pomocy frameworku [SwiftData](https://developer.apple.com/documentation/swiftdata).  
  Wtym celu będziesz musiał(a):
@@ -40,7 +40,7 @@ Utwórz w swojej grupie projekt o ścieżce lab3, podobnie jak na pierwszym labo
  }
  ```
 
-### Nawigacja
+### 2. Nawigacja
  Do nawigacji w częściach naszej aplikacji prezentujących wykorzystamy prezentowany
  na wykładzie mechanizm [NavigationSplitView](https://developer.apple.com/documentation/swiftui/navigationsplitview). Dla przypomnienia: jest to wzorzec,
  który zawiera widok główny (np. listę elementów– master) oraz widok szczegółów (np.
@@ -58,7 +58,7 @@ Utwórz w swojej grupie projekt o ścieżce lab3, podobnie jak na pierwszym labo
  którą listę oglądamy (wszystkie, zaległe, itd.). W widoku szczegółów tytuł powinien być
  ogólny („Zadanie”), i zawsze wyświetlany w górnej belce.
 
- ### Dodawanie rekordu
+ ### 3. Dodawanie rekordu
 Wwidoku listy dodaj na górnej belce (toolbar) przycisk „+” (ToolbarItem), który
  dodaje nowe zadanie. W tej chwili podłącz do niego minimalną logikę, która tworzy nowe
  zadanie o tytule „Nowe zadanie”.
@@ -70,7 +70,7 @@ Wwidoku listy dodaj na górnej belce (toolbar) przycisk „+” (ToolbarItem), k
  - mieć ustawiony termin wykonania (deadline) na przedwczoraj (zakładka „Zaległe”).
 
 
-### Checkbox
+### 4. Checkbox
 By dodać do widoku pojedynczej karty zadania checkbox, który pozwoli na oznaczanie
  zadania jako wykonane, dodaj nową strukturę CheckBoxView, która jako parametr
  przyjmie jedną zmienną typu Bool- pole wchodzące w skład struktury ToDo. Za
