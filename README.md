@@ -22,9 +22,9 @@ All of Linux users are unfortunately out of luck, as `Xcode` is only available o
 | Description  | Guide | Assignment |
 | ------------- | ------------- | ------------- |
 | 01. Introduction | -  | - |
-| 02. Overfitting and Underfitting | [guide2](https://github.com/lursz/MobileApps/blob/labs/lab1/README.md)  | [lab2](https://github.com/lursz/MobileApps/blob/labs/lab1/) |
-| 03. Convolutional Neural Networks | [guide3](https://github.com/lursz/MobileApps/blob/labs/lab2/README.md)  | [lab3](https://github.com/lursz/MobileApps/blob/labs/lab2/) |
-| 04. CNN augmentation | [guide4](https://github.com/lursz/MobileApps/blob/labs/lab3/README.md)  | [lab4](https://github.com/lursz/MobileApps/blob/labs/lab3/) |
-| 05. Transfer learning | [guide5](https://github.com/lursz/MobileApps/blob/labs/lab4/README.md)  | [lab5](https://github.com/lursz/MobileApps/blob/labs/lab4/) |
+| 02. SwiftUI | [guide2](https://github.com/lursz/MobileApps/blob/labs/lab1/README.md)  | [lab2](https://github.com/lursz/MobileApps/blob/labs/lab1/) |
+| 03. Data flow | [guide3](https://github.com/lursz/MobileApps/blob/labs/lab2/README.md)  | [lab3](https://github.com/lursz/MobileApps/blob/labs/lab2/) |
+| 04. Persistence | [guide4](https://github.com/lursz/MobileApps/blob/labs/lab3/README.md)  | [lab4](https://github.com/lursz/MobileApps/blob/labs/lab3/) |
+| 05. Sheet | [guide5](https://github.com/lursz/MobileApps/blob/labs/lab4/README.md)  | [lab5](https://github.com/lursz/MobileApps/blob/labs/lab4/) |
 
 ## Screenshots
