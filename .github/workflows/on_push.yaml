@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
 
     env:
-      PROJECT_PATH: lab3/todoApp.xcodeproj
+      PROJECT_PATH: todoApp.xcodeproj
       SCHEME: todoApp 
 
     steps:

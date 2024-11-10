@@ -22,7 +22,7 @@ class ToDo: Identifiable {
 }
 
 
-enum Priority: Codable {
+enum Priority: String, Codable, CaseIterable {
     case low
     case normal
     case high
