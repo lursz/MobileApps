@@ -28,3 +28,7 @@ All of Linux users are unfortunately out of luck, as `Xcode` is only available o
 | 05. Sheet | [guide5](https://github.com/lursz/MobileApps/blob/labs/lab4/README.md)  | [lab5](https://github.com/lursz/MobileApps/blob/labs/lab4/) |
 
 ## Screenshots
+![Zrzut ekranu 2024-11-8 o 10 48 06](https://github.com/user-attachments/assets/8c829eb5-862a-4b0c-aef3-5d8a817f4374)
+![Zrzut ekranu 2024-11-8 o 10 47 48](https://github.com/user-attachments/assets/5ede25ac-5136-416a-ad51-c07e604556d6)
+![Zrzut ekranu 2024-11-8 o 10 48 00](https://github.com/user-attachments/assets/efcfe6bd-933d-43b3-9313-5f60a09d0e43)
+![Zrzut ekranu 2024-11-8 o 10 48 58](https://github.com/user-attachments/assets/7abc8906-5941-4bbc-adfb-c8f583f5db2e)
